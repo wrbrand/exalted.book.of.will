@@ -47,17 +47,17 @@ IT IS SAID IN THE BOOK OF REDEMPTION,
 AMEN.
 
 IT IS SAID IN THE BOOK OF ANGER,
-    THEY WILL SAY THE PHRASE Your God is angry AMEN.
+    THEY WILL SAY THE VERSE Your God is angry AMEN.
 AMEN.
 
 IT IS SAID IN THE BOOK OF JOY,
-    THEY WILL SAY THE PHRASE Your God is pleased AMEN.
+    THEY WILL SAY THE VERSE Your God is pleased AMEN.
 AMEN.
 
 IT IS SAID IN THE BOOK OF FROGS,
     GOD HAS GROWN IMPATIENT WITH HIS PEOPLE.
     RECITE THE BOOK OF ANGER.
-    SOME RELIGIOUS SHIT GOES HERE
+    SOME RELIGIOUS SHIT GOES HERE.
     IT IS SAID IN THE SCRIPT OF JAVA
         var frogSources = new Array('http://vannw.org/wp-content/uploads/2012/01/Frog-Happy.png',
                                     'http://openclipart.org/image/800px/svg_to_png/110407/frogPrince_normal.png',
@@ -90,9 +90,10 @@ IT IS SAID IN THE BOOK OF FROGS,
 
         function moveFrogs() {
             frogImgs.forEach(function(img, i) {
-                img.style.top = (parseInt(img.style.top.split('px')[0]) + 10 ) + "px";
+                img.style.top = (parseInt(img.style.top.split('px')[0]) + 10 ) + 'px';
             });
         }
+    AMEN.
 AMEN.
 
 IT IS SAID IN THE BOOK OF CONFUSION,
@@ -115,7 +116,7 @@ IT IS SAID IN THE BOOK OF CONFUSION,
           deg++;
           if (deg == 360) { deg = 0; }
         }
-        var t=setInterval("rotation()",167);
+        var t=setInterval('rotation()',167);
     AMEN.
 AMEN.
 
@@ -123,7 +124,7 @@ IT IS SAID IN THE BOOK OF VISIONS,
     RECITE THE BOOK OF JOY.
     IT IS SAID IN THE SCRIPT OF JAVA
         var opacity = 0.95; var goingUp = false;
-        var t3=setInterval("vision()",167);
+        var t3=setInterval('vision()',167);
 
         function vision(){
             if(typeof(document.body.style.opacity) == 'undefined') {
@@ -152,31 +153,31 @@ IT IS SAID IN THE BOOK OF PAIN,
 
     IT IS SAID IN THE SCRIPT OF JAVA
         boilImages = new Array('http://beatrixruf.com/boils/dermnet_rm_photo_of_boil_or_mrsa.png',
-        			'http://beatrixruf.com/boils/mrsa-boil.png',
-        			'http://beatrixruf.com/boils/PictureOfBoil.png')
+              'http://beatrixruf.com/boils/mrsa-boil.png',
+              'http://beatrixruf.com/boils/PictureOfBoil.png')
 
 
         // change this to value, not reference
         images = new Array()
 
         for (var i = 0; i < document.body.getElementsByTagName('img').length; i++) {
-        	images.push(document.body.getElementsByTagName('img')[i]);
+          images.push(document.body.getElementsByTagName('img')[i]);
         }
 
         for (var i = 0; i < images.length; i++) {
 
 
-        	var boil = document.createElement('img');
-        	boil.style.width = '100px';
-        	boil.style.height = 'auto';
-        	boil.style.zIndex = '999';
-        	images[i].style.position = 'relative';
-        	boil.style.position = 'absolute';
-        	boil.style.top = ( Math.floor(Math.random() * 300 ) ) + 'px';
-        	boil.style.left = ( Math.floor(Math.random() * 300 ) ) + 'px';
-        	boil.setAttribute('src', boilImages[Math.floor(Math.random() * (boilImages.length - 1))])
+          var boil = document.createElement('img');
+          boil.style.width = '100px';
+          boil.style.height = 'auto';
+          boil.style.zIndex = '999';
+          images[i].style.position = 'relative';
+          boil.style.position = 'absolute';
+          boil.style.top = ( Math.floor(Math.random() * 300 ) ) + 'px';
+          boil.style.left = ( Math.floor(Math.random() * 300 ) ) + 'px';
+          boil.setAttribute('src', boilImages[Math.floor(Math.random() * (boilImages.length - 1))])
 
-        	images[i].parentNode.appendChild(boil);
+          images[i].parentNode.appendChild(boil);
         }
     AMEN.
 AMEN.
